@@ -21,5 +21,6 @@ class String
         count+=1
       end
     end
+    return count
   end
 end
