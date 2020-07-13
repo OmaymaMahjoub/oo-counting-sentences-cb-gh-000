@@ -17,8 +17,8 @@ class String
   def count_sentences
     count=0
     arr=self.split(" ")
-    self.each do |car|
-      if car=="!" || car=="?" ||car=="."
+    arr.each do |car|
+      if car.end_with?("!") || car.end_with?("?") ||car.end_with?(".")
         count+=1
       end
     end
