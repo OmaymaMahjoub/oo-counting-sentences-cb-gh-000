@@ -16,6 +16,7 @@ class String
 
   def count_sentences
     count=0
+    arr=self.split(" ")
     self.each do |car|
       if car=="!" || car=="?" ||car=="."
         count+=1
